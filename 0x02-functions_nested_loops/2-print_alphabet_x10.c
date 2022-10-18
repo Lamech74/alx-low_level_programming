@@ -1,24 +1,31 @@
 #include "main.h"
 
 /**
- * add - adds two integers
- * @n1: integer 1
- * @n2: integer 2
- * Description: give two integers, returns sum
- * Return: sum
- */
+* print_alphabet_x10 - This function prints the alphabet 10 times
+* in lowercase, followed by a newline
+*/
 
-
-int add(int n1, int n2)
+void print_alphabet_x10(void)
 
 {
 
-	int sum;
+	int ch, i;
 
 
-	sum = n1 + n2;
+	for (i = 0; i < 10; i++)
 
+	{
 
-	return (sum);
+		for (ch = 'a'; ch <= 'z'; ch++)
+
+		{
+
+			_putchar(ch);
+
+		}
+
+		_putchar('\n');
+
+	}
 
 }
